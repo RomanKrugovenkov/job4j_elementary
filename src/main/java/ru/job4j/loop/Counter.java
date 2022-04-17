@@ -4,14 +4,18 @@ public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
         for (start = start; start <= finish; start++) {
-            sum = sum + start;
+            sum += start;
         }
         return sum;
     }
 
-    public static void main(String[] args) {
-        System.out.println(sum(0, 7));
-        System.out.println(sum(3, 9));
-        System.out.println(sum(1, 2));
+    public static int sumByEven(int start, int finish) {
+        int sum = 0;
+        for (start = start; start <= finish; start++) {
+            if (start % 2 == 0) {
+                sum += start;
+            }
+        }
+        return sum;
     }
 }
