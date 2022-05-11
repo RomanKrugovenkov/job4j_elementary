@@ -9,23 +9,23 @@ import static ru.job4j.condition.Max.*;
 public class MaxTest {
 
     @Test
-    public void whenL5R7() {
+    public void when5700() {
         int expected = 7;
-        int out = max(5, 7);
+        int out = max(5, 7, 0, 0);
         assertEquals(expected, out);
     }
 
     @Test
-    public void whenL6R4() {
+    public void when1436() {
         int expected = 6;
-        int out = max(6, 4);
+        int out = max(1, 4, 3, 6);
         assertEquals(expected, out);
     }
 
     @Test
-    public void whenL8R8() {
-        int expected = 8;
-        int out = max(8, 8);
+    public void when0001() {
+        int expected = 1;
+        int out = max(0, 0, 0, 1);
         assertEquals(expected, out);
     }
 }
